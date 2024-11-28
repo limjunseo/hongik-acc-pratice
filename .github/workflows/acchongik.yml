@@ -1,10 +1,9 @@
 name: "Release Health Check"
 
 on:
-  # 매 2시간마다 수행
-  schedule:
-    - cron: "0 */2 * * *"
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 
 jobs:
